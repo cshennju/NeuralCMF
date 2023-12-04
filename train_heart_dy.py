@@ -9,7 +9,7 @@ from einops import rearrange
 # data
 from torch.utils.data import DataLoader
 from datasets import dataset_dict
-from datasets.ray_utils import axisangle_to_R, get_points
+from datasets.points_utils import axisangle_to_R, get_points
 
 # models
 from models.networks_dy_siren import Siren,TimeEmbedding

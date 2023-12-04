@@ -4,7 +4,7 @@ import numpy as np
 import os
 from tqdm import tqdm
 import json
-from .ray_utils import get_ini_position
+from .points_utils import get_ini_position
 from einops import rearrange
 import collections
 from .base_dy import BaseDataset

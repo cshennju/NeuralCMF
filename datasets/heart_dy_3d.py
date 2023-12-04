@@ -2,7 +2,7 @@ import torch
 import glob
 import numpy as np
 import os
-from .ray_utils import get_ini_position_3d
+from .points_utils import get_ini_position_3d
 from einops import rearrange
 from .base_dy_3d import BaseDataset
 

@@ -5,7 +5,7 @@ This repository holds the Pytorch implementation of [Tracking Anything in Heart 
 ```
 @article{shen2023tracking,
   title={Tracking Anything in Heart All at Once},
-  author={{Shen, Chengkang and Zhu, Hao and Zhou, You and Liu, Yu and Yi, Si and Dong, Lili and Zhao, Weipeng and Brady, David and Cao, Xun and Ma, Zhan and Lin, Yi}},
+  author={Shen, Chengkang and Zhu, Hao and Zhou, You and Liu, Yu and Yi, Si and Dong, Lili and Zhao, Weipeng and Brady, David and Cao, Xun and Ma, Zhan and Lin, Yi},
   journal={arXiv preprint arXiv:2310.02792},
   year={2023}
 }
@@ -13,7 +13,7 @@ This repository holds the Pytorch implementation of [Tracking Anything in Heart 
 
 ## Introduction
 
-In this repository,  
+In this repository, we provide
 
 ## Quickstart
 
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ### 2D Echo Datasets
 
 
-### Acknowledgement
+## Acknowledgement
 This code is extended from the following repositories.
 - [ngp_pl](https://github.com/kwea123/ngp_pl)
 - [nsff_pl](https://github.com/kwea123/nsff_pl)

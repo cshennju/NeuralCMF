@@ -1,6 +1,6 @@
 # Tracking Anything in Heart All at Once
 
-This repository holds the Pytorch implementation of [Tracking Anything in Heart All at Once](https://cshennju.github.io/NeuralCMF.github.io/). If you find our code useful in your research, please consider citing:
+This repository holds the Pytorch implementation of [Tracking Anything in Heart All at Once](https://njuvision.github.io/NeuralCMF/). If you find our code useful in your research, please consider citing:
 
 ```
 @article{shen2023tracking,

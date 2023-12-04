@@ -32,14 +32,14 @@ python train_heart_dy_3d.py --root_dir './straus/normal' --exp_name 'straus/norm
 ```
 
 ### 3D Echo Datasets
-The 3D echocardiogram video dataset was acquired for each volunteer using commercial PHILIPS EPIQ 7C machines equipped with a X5-1 3DE probe. These 3D images were captured employing a standard four-chamber apical view. The 3D video in each data has a resolution (160, 160, 160). The data are organized and readily available in the [3d_example folder](3d_example).
+The 3D echocardiogram video data was acquired for each volunteer using commercial PHILIPS EPIQ 7C machines equipped with a X5-1 3DE probe. These 3D images were captured employing a standard four-chamber apical view. The 3D video in each data has a resolution (160, 160, 160). The example data are organized and readily available in the [3d_example folder](3d_example).
 #### :key: Training
 ```
 python train_heart_dy_3d.py --root_dir './3d_example/' --exp_name '3d_example' --T 4 --img_size [160,160,160]
 ```
 
 ### 2D Echo Datasets
-The 2D echocardiogram video dataset was acquired using commercial PHILIPS EPIQ 7C/IE ELITE machines with S5-1 2DE probes and SIEMENS ACUSON SC2000 PRIME machines with a 4V1c 2DE probe. During the imaging process, sonographers performed 360-degree rotations around the apex of the heart for each individual volunteer. Subsequently, the 2D echocardiogram videos were synchronized based on concurrently recorded ECG signals. The resolution of each image is (160, 160). The data are organized and readily available in the [2d_example folder](2d_example).
+The 2D echocardiogram video data was acquired using commercial PHILIPS EPIQ 7C/IE ELITE machines with S5-1 2DE probes and SIEMENS ACUSON SC2000 PRIME machines with a 4V1c 2DE probe. During the imaging process, sonographers performed 360-degree rotations around the apex of the heart for each individual volunteer. Subsequently, the 2D echocardiogram videos were synchronized based on concurrently recorded ECG signals. The resolution of each image is (160, 160). The example data are organized and readily available in the [2d_example folder](2d_example).
 #### :key: Training
 ```
 python train_heart_dy.py --root_dir './2d_example/' --exp_name '2d_example' --T 6 --img_size [160,160,160]

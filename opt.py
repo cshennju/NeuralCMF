@@ -23,6 +23,9 @@ def get_opts():
                         help='number of gpus')
     parser.add_argument('--lr', type=float, default=1e-4,
                         help='learning rate')
+    parser.add_argument('--img_size', nargs=3, type=int, default=[160, 160, 160], 
+                        help='image_resolution')
+
 
     # validation options
     parser.add_argument('--val_only', action='store_true', default=False,

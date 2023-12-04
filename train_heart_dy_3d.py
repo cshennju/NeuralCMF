@@ -56,7 +56,8 @@ class NeuralCMFSystem(LightningModule):
 
     def setup(self, stage):
         dataset = dataset_dict[self.hparams.dataset_name]
-        kwargs = {'root_dir': self.hparams.root_dir}
+        kwargs = {'root_dir': self.hparams.root_dir,
+                  'img_size': self.hparams.img_size}
         self.train_dataset = dataset(split=self.hparams.split, **kwargs)
         self.train_dataset.batch_size = self.hparams.batch_size
         self.test_dataset = dataset(split='test', **kwargs)

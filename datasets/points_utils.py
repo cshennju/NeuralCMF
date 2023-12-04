@@ -8,8 +8,8 @@ from einops import rearrange
 @torch.cuda.amp.autocast(dtype=torch.float32)
 def get_ini_position_3d(D,H, W, device='cpu', flatten=True):
     
-    grid = create_meshgrid3d(D, H, W, False, device=device)[0] # (H, W, 2)
-    grid = grid/160
+    grid = create_meshgrid3d(D, H, W, False, device=device)[0] 
+    grid = grid/max(D, H, W)
     i, j, k = grid.unbind(-1)
 
     ini_position = torch.stack([i,k,j], -1)
@@ -22,8 +22,7 @@ def get_ini_position_3d(D,H, W, device='cpu', flatten=True):
 @torch.cuda.amp.autocast(dtype=torch.float32)
 def get_ini_position(H, W, device='cpu', flatten=True):
     
-    grid = create_meshgrid(H, W, False, device=device)[0] # (H, W, 2)
-    #print(grid)
+    grid = create_meshgrid(H, W, False, device=device)[0] 
     i, j = grid.unbind(-1)
 
     ini_position = \
@@ -40,7 +39,7 @@ def get_points(ini_position, c2w):
     points_r = rearrange(points_r, 'n 1 c -> n c')
     points_t = c2w[..., 3].expand_as(points_r)
     points_d = points_r + points_t
-    points_d = points_d/160-0.5
+    points_d = points_d/160 - 0.5
     return points_d
 
 

@@ -7,18 +7,22 @@ from einops import rearrange
 from .base_dy_3d import BaseDataset
 
 class HeartDY3dDataset(BaseDataset):
-    def __init__(self, root_dir, split='train', **kwargs):
+    def __init__(self, root_dir,img_size,split='train',**kwargs):
         super().__init__(root_dir, split)
         self.root_dir = root_dir
+        self.img_size = img_size
 
         self.read_intrinsics()
 
         self.read_meta()
 
     def read_intrinsics(self):
-        w = 160 #224 or 130
-        h = 160 #176 or 110
-        d = 160 #208 or 140
+        w = self.img_size[0]
+        h = self.img_size[1]
+        d = self.img_size[2]
+        # w = 160 #224 or 130
+        # h = 160 #176 or 110
+        # d = 160 #208 or 140
         self.ini_position = get_ini_position_3d(w,h,d)
         self.img_wh = (w, h, d)
 

@@ -13,7 +13,7 @@ This repository holds the Pytorch implementation of [Tracking Anything in Heart 
 
 ## Introduction
 
-In this repository, we provide
+In this repository, detailed examples are provided to demonstrate the application of our code across three unique echocardiogram video datasets: the STRAUS Datasets, and both 2D and 3D Echocardiogram Video Datasets.
 
 ## Quickstart
 
@@ -25,10 +25,26 @@ cd NeuralCMF
 pip install -r requirements.txt
 ```
 ### STRAUS Datasets
+The open-source 3D Strain Assessment in Ultrasound (STRAUS) dataset [1] consists of 8 distinct volumetric sequences, each corresponding to a specific physiological condition. The 3D video in each data has a resolution (130, 110, 140). All volumetric sequences are organized and readily available in the [straus folder](straus).
+
+```
+git clone https://github.com/cshennju/NeuralCMF.git
+```
 
 ### 3D Echo Datasets
 
+```
+git clone https://github.com/cshennju/NeuralCMF.git
+```
+
 ### 2D Echo Datasets
+
+```
+git clone https://github.com/cshennju/NeuralCMF.git
+```
+
+## References
+[1] Alessandrini, M., De Craene, M., Bernard, O., Giffard-Roisin, S., Allain, P., Waechter-Stehle, I., ... & D'hooge, J. (2015). [A pipeline for the generation of realistic 3D synthetic echocardiographic sequences: Methodology and open-access database.](https://ieeexplore.ieee.org/abstract/document/7024160) IEEE transactions on medical imaging, 34(7), 1436-1451.
 
 
 ## Acknowledgement

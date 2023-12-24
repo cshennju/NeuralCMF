@@ -40,7 +40,6 @@ if __name__ == "__main__":
     print(grid.min())
     grid = grid/140
     rays_dir = grid.reshape(-1, 3)
-
     t = torch.ones((len(rays_dir),1)).cuda()
     ts = 0*t #change ts to get which frame you want
     res = ne_func(rays_dir,ts,output_transient_flow,embedding_t)

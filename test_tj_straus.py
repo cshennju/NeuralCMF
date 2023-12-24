@@ -44,9 +44,7 @@ if __name__ == "__main__":
     os.makedirs(img_out, exist_ok=True)
     t = torch.ones((len(directions),1)).float().cuda()
     rays_d = torch.tensor(directions).float().cuda()
-
     fwd = []
-
     f_w = 0
     for j in range(4):
         ts = j*t

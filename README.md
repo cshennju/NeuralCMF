@@ -1,13 +1,13 @@
 # Tracking Anything in Heart All at Once
 
-This repository holds the Pytorch implementation of [Tracking Anything in Heart All at Once](https://njuvision.github.io/NeuralCMF/). If you find our code useful in your research, please consider citing:
+This repository holds the Pytorch implementation of [Continuous 3D Myocardial Motion Tracking via Echocardiography](https://njuvision.github.io/NeuralCMF/). If you find our code useful in your research, please consider citing:
 
 ```
 @article{shen2023tracking,
-  title={Tracking Anything in Heart All at Once},
+  title={Continuous 3D Myocardial Motion Tracking via Echocardiography},
   author={Shen, Chengkang and Zhu, Hao and Zhou, You and Liu, Yu and Yi, Si and Dong, Lili and Zhao, Weipeng and Brady, David and Cao, Xun and Ma, Zhan and Lin, Yi},
-  journal={arXiv preprint arXiv:2310.02792},
-  year={2023}
+  journal={arXiv preprint},
+  year={2024}
 }
 ```
 

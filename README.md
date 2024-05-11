@@ -1,4 +1,4 @@
-# Tracking Anything in Heart All at Once
+# Continuous 3D Myocardial Motion Tracking via Echocardiography
 
 This repository holds the Pytorch implementation of [Continuous 3D Myocardial Motion Tracking via Echocardiography](https://njuvision.github.io/NeuralCMF/). If you find our code useful in your research, please consider citing:
 

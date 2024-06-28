@@ -3,11 +3,12 @@
 This repository holds the Pytorch implementation of [Continuous 3D Myocardial Motion Tracking via Echocardiography](https://njuvision.github.io/NeuralCMF/). If you find our code useful in your research, please consider citing:
 
 ```
-@article{shen2023tracking,
-  title={Continuous 3D Myocardial Motion Tracking via Echocardiography},
-  author={Shen, Chengkang and Zhu, Hao and Zhou, You and Liu, Yu and Yi, Si and Dong, Lili and Zhao, Weipeng and Brady, David and Cao, Xun and Ma, Zhan and Lin, Yi},
-  journal={arXiv preprint},
-  year={2024}
+@article{shen2024continuous,
+  author    = {Shen, Chengkang and Zhu, Hao and Zhou, You and Liu, Yu and Yi, Si and Dong, Lili and Zhao, Weipeng and Brady, David and Cao, Xun and Ma, Zhan and Lin, Yi},
+  title     = {Continuous 3D Myocardial Motion Tracking via Echocardiography},
+  journal   = {IEEE Transactions on Medical Imaging},
+  year      = {2024},
+  publisher = {IEEE}
 }
 ```
 

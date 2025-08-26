@@ -52,7 +52,7 @@ class NeuralCMFSystem(LightningModule):
 
         position = ini_position
 
-        return render(self.model,position,self.embedding_t,self.train_dataset.N_frames-1,self.output_transient_flow,ts,hparams.T)
+        return render(self.model,position,self.embedding_t,self.output_transient_flow,ts,hparams.T)
 
     def setup(self, stage):
         dataset = dataset_dict[self.hparams.dataset_name]
